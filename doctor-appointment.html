@@ -1,17 +1,40 @@
 <link rel="stylesheet" href="doctor-appointment.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="swiper.min.css">
+
 <div class="header">
     <div class="logo">
         <img src="images/logo.svg" alt="">
     </div>
-    <div class="options">نوبت دهی</div>
+    <div class="options">
+        <a href="./doctor-appointment.html">
+            نوبت دهی
+        </a>
+    </div>
     <div class="options">مشاوره تلفنی</div>
-    <div class="options">مشاوره متنی فوری</div>
-    <div class="options">تخصص ها</div>
+    <div class="options"><a href="./consultation.html">
+        مشاوره متنی فوری
+    </a></div>
+    <div class="options">
+        <a href="./specialties.html">
+            تخصص ها
+        </a>
+    </div>
     <div class="options">مراکز درمانی</div>
     <div class="options last">خدمات پزشکی درمحل</div>
     <div class="enter">
-        <button>ورود</button>
+        <button id="enter">ورود</button>
+    </div>
+    <div id="enterModal" class="modal">
+        <div class="modal-content">
+            <p class="close">&times;</p>
+            <h4>ورود به حساب کاربری</h4>
+            <input type="text" placeholder="شماره موبایل" class="phone">
+            <button class="submit-button">
+                <span class="verification-code">دریافت کد تایید</span>
+            </button>
+            <div class="input-box">_ _ _ _ _ _</div>
+        </div>
     </div>
 </div>
 <div class="body">
@@ -62,7 +85,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -103,7 +126,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -144,7 +167,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -185,7 +208,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -226,7 +249,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -267,7 +290,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -308,7 +331,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -349,7 +372,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -390,7 +413,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -431,7 +454,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
             <div class="doctor-card first">
@@ -472,7 +495,7 @@
                     <div class="address">
                         <h4>آدرس: حیابان فلان کوچه فلان و...</h4>
                     </div>
-                    <button>دریافت نوبت</button>
+                    <button><a href="./about-doc.html"> دریافت نوبت </a></button>
                 </div>
             </div>
         </div>
@@ -502,3 +525,4 @@
         </div>
     </div>
 </div>
+<script src="modal.js"></script>

@@ -1,20 +1,42 @@
 <link rel="stylesheet" href="about-doc.css">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="swiper.min.css">
+
 <div class="header">
     <div class="logo">
         <img src="images/logo.svg" alt="">
     </div>
-    <div class="options">نوبت دهی</div>
+    <div class="options">
+        <a href="./doctor-appointment.html">
+            نوبت دهی
+        </a>
+    </div>
     <div class="options">مشاوره تلفنی</div>
-    <div class="options">مشاوره متنی فوری</div>
-    <div class="options">تخصص ها</div>
+    <div class="options"><a href="./consultation.html">
+        مشاوره متنی فوری
+    </a></div>
+    <div class="options">
+        <a href="./specialties.html">
+            تخصص ها
+        </a>
+    </div>
     <div class="options">مراکز درمانی</div>
     <div class="options last">خدمات پزشکی درمحل</div>
     <div class="enter">
-        <button>ورود</button>
+        <button id="enter">ورود</button>
+    </div>
+    <div id="enterModal" class="modal">
+        <div class="modal-content">
+            <p class="close">&times;</p>
+            <h4>ورود به حساب کاربری</h4>
+            <input type="text" placeholder="شماره موبایل" class="login-phone">
+            <button class="submit-button">
+                <span class="verification-code">دریافت کد تایید</span>
+            </button>
+            <div class="input-box">_ _ _ _ _ _</div>
+        </div>
     </div>
 </div>
-
 <div class="body">
     <div class="header-info">
         <div class="image"><img src="images/hannibal.svg" alt=""></div>
@@ -25,7 +47,11 @@
         </div>
         <div class="end">
             <div>تعداد مراجعه : زیاد</div>
-            <div>ایالت فلوریدا  </div>
+            <div class="location">
+                <p> <i class="fa fa-star"></i>5 </p>
+                <p class="city">                ایالت فلوریدا
+                </p>
+            </div>
         </div>
     </div>
     <div class="appointment">
@@ -42,7 +68,7 @@
             </div>
             <div class="price">500,000 تومن</div>
             <div class="buttons"> 
-                <button class="physical-btn">دریافت نوبت</button>
+                <button class="physical-btn"><a href="./get-appointment.html"> دریافت نوبت </a></button>
             </div>
         </div>
         <div class="phone">
@@ -58,7 +84,7 @@
             </div>
             <div class="price">350,000 تومن</div>
             <div class="buttons"> 
-                <button class="physical-btn">دریافت نوبت</button>
+                <button class="physical-btn"><a href="./get-appointment.html"> دریافت نوبت </a></button>
             </div>
         </div>
     </div>
@@ -91,3 +117,4 @@
         </div>
     </div>
 </div>
+<script src="modal.js"></script>

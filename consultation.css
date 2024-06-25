@@ -102,107 +102,49 @@ body{
 .logo{
     width: 12%;
 }
-.body-title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-.intro{
-    display: flex;
-    flex-direction: column;
-}
-.intro h1{
-    color: #FFB47C;
-}
 .body{
-    margin: 4rem 12rem 2rem 12rem;
-}
-.slider{
+    padding: 10rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-.doctor-card{
-    display: flex;
-    width: 35%;
-    min-height: 350px;
-    border: 1px solid #FF8E3A;
-    background-color: #ffb47c85;
-    border-radius: 12px;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin: 0.5rem 1rem;
-    padding: 1rem 1.5rem;
-}
-.top-info{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    width: 100%;
-
 }
-.right-top-info{
-    width: 50%;
-    align-items: center;
-
-}
-.right-top-info img{
-    width: 200px;
+.consultation{
     height: 200px;
-}
-.top-left-info{
-    width: 50%;
-}
-.right-top-info,.top-left-info{
-    display: flex;
-    flex-direction: column;
-}
-.pairs{
+    width: 80%;
+    padding: 2rem;
+    border-radius: 32px;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-.doctor-card button{
-    width: 150px;
-    height: 30px;
-    border-radius: 12px;
-    background-color: #FF8E3A ;
-    border: none !important;
-    color: #fff;
-    width: 35%;
+    margin-bottom: 2rem;
 
 }
-.info{
-    
-    margin:0 0 5px 0 !important;
+.consultation-img{
+    width: 15%;
 }
-.bottom-info{
+.first{
+    background-color: transparent;
+}
+.start{
+    width: 20%;
+    height: 5rem;
+    border-radius: 8px;
+    background-color: #4361FF;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-.last-options{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-.address{
-    width: 60%;
-}
-.right-bottom-info{
-    width: 30%;
-    display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    
 }
+.start h2{
+    color: #fff;
+}
+.start i{
+    color: #4361FF;
+}
+
+
+
+
 .footer{
     height: 300px;
     width: 100%;
@@ -250,7 +192,4 @@ body{
 a{
     text-decoration: none;
     color: #323223;
-}
-button a{
-    color: #fff !important;
 }
